@@ -1,5 +1,26 @@
-.App {
-  text-align: center;
+@font-face {
+  font-weight: 400;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-600.woff2') format('woff2'),
+    url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-600.woff') format('woff');
+}
+
+.App > video {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .App-logo {
