@@ -18,11 +18,6 @@
     url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-600.woff') format('woff');
 }
 
-.App > video {
-  width: 100%;
-  min-height: 100vh;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

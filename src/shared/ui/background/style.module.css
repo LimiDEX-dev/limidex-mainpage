@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+}
+
+.container::after {
+  content: '';
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video {
+  width: 100%;
+  min-height: 100vh;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  object-fit: cover;
+}
+
+.container .video:first-child {
+  visibility: hidden;
+}
+
+.container.static .video:first-child {
+  visibility: visible;
+}
+
+.container.static .video:last-child {
+  visibility: hidden;
+}
