@@ -18,6 +18,25 @@
     url('../public/assets/fonts/open-sans/open-sans-v27-latin_cyrillic-600.woff') format('woff');
 }
 
+@font-face {
+  font-weight: 400;
+  font-family: 'Righteous';
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../public/assets/fonts/righteous/regular/righteous-400.woff2') format('woff2'),
+    url('../public/assets/fonts/righteous/regular/righteous-400.woff') format('woff');
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

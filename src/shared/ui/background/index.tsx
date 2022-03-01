@@ -10,7 +10,6 @@ export const Background: FC = () => {
   const [isRevealEnded, setIsRevealEnded] = useState<boolean>(false);
   const [isVerticalVideo, setIsVerticalVideo] = useState<boolean>(false);
   const revealVideoRef = useRef<HTMLVideoElement>(null);
-  const staticVideoRef = useRef<HTMLVideoElement>(null);
 
   useLayoutEffect(() => {
     const handleVideoEnded = () => {
@@ -36,8 +35,8 @@ export const Background: FC = () => {
     };
     window.addEventListener('resize', handleResize);
 
-    if (window.innerWidth >= window.innerHeight) {
-      setIsVerticalVideo(false);
+    if (window.innerWidth < window.innerHeight) {
+      setIsVerticalVideo(true);
     }
 
     return () => {
@@ -60,7 +59,6 @@ export const Background: FC = () => {
         loop
         autoPlay
         muted
-        ref={staticVideoRef}
         className={s.video}
       />
       <video
