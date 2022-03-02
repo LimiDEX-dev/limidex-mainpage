@@ -58,12 +58,14 @@ export const Background: FC = () => {
         src={`/assets/${getVideoDist('background-static')}.mp4`}
         loop
         autoPlay
+        playsInline
         muted
         className={s.video}
       />
       <video
         src={`/assets/${getVideoDist('background-reveal')}.mp4`}
         autoPlay
+        playsInline
         muted
         ref={revealVideoRef}
         className={s.video}
